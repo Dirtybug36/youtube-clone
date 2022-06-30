@@ -1,0 +1,100 @@
+.thumbnail-row {
+  margin-bottom: 12px;
+  position: relative;
+}
+.video-grid {
+  padding-left: 100px;
+  /*it pushes more to the left from the body so that we can use side bar properly*/
+  display: grid;
+  column-gap: 16px;
+  row-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr; /*makes all the videos equally distribute*/
+}
+.thumbnail {
+  width: 100%;
+  /* width: 300px; we wont use this because it forces the videos to be 300px and in avobe we use grid so no need to use width in any css!!!*/
+  /*when we set the width of a img then it is going to effect the height of the image too i.e 300*300px..it will shrink a image into a 300px
+      height: 300px;
+      object-fit: cover;
+      it tells the computer to fit the image according to the height and width without losing its shape
+      object-position: right;
+      it helps to show us which part of the image to show if the image is greater or smaller than than our height and width...can be left/right/top/buttom or contain*/
+  /*display: block;we dont use it because of grid */
+  /*we use block because it takes all the spaces horizontally so that both img and search box doesnt align horizontally*/
+}
+
+/*div.video-preview {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+  }
+  we dont use this anymore because we will use grid columns margin and row column marnin
+  */
+
+.Video-title {
+  line-height: 20px; /*it works for the same <p>*/
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+  font-weight: 500; /*we downloaded the roboto font inwhich 500 was the bold one
+    /* width: 300px;*/
+  /*dispaly:block; is always block for the paragraphs and they take all the horizontal line of the page. to change that
+        we need to change display to inline block which only take space how much they have covered*/
+}
+
+.video-author,
+.views {
+  color: rgb(96, 96, 96);
+  margin: 0px;
+  font-size: 12px;
+}
+.video-author {
+  margin-bottom: 4px;
+}
+/*
+  .views {
+    font-family: Roboto, arial, sans-serif;
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+    margin: 0px;
+  
+  
+  }
+  */
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  /* this 5opx is for the pic and 1 fr takes the remaining spaces
+    we usually do to perfectly align the items vertically..instead 
+    of using inline block we can use these when we have two divs having different elements */
+}
+/* .channel-picture { */
+/*display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    we dont have to use this because we used grid above*/
+/* } */
+/* .video-info { */
+/*width: 200px;
+    display: inline-block;
+    we dont have to use this because we used grid above*/
+/* } */
+.profile-picture {
+  margin-top: 5px;
+  border-radius: 50px;
+  width: 40px;
+  /*100% means this image will take up the entire space of its container*/
+}
+.video-time {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  color: white;
+  background-color: black;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-family: Roboto, arial;
+  font-weight: 500;
+}

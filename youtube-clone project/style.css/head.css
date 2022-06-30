@@ -1,0 +1,116 @@
+* {
+  font-family: Roboto, Arial;
+}
+.header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* this will align items horizontally items */
+  justify-content: space-between;
+  /* yesle chae vitra vako sabailae equal space ma distribute garaxa */
+  z-index: 100;
+  border-bottom: 1px solid rgb(234, 229, 229);
+}
+
+.section-left {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.youtube-logo {
+  height: 20px;
+}
+
+.section-middle {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-right: 35px;
+  flex: 1;
+  /* yesle chae baaki vako space sbai cover garxa */
+  max-width: 500px;
+  /* window resize garda maximum width samma matra resize hunxa */
+}
+.search-icon-middle {
+  margin: 3px;
+  height: 25px;
+  border-style: light black;
+}
+.search-bar {
+  width: 0;
+  /* normally search bar has certain width so putting width to 0 will resize the window until it shrinks to 0 */
+  margin-left: 40px;
+  flex: 1;
+  height: 34px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.15);
+  /* inset provides shadow to the inside, 1px to right,1px to top and 1px is the depth of shadow */
+}
+/* to target the placeholder we need to specify this pseudo class */
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+  padding-left: 10px;
+}
+.voice-search-icon {
+  height: 25px;
+}
+button.search-icon {
+  width: 70px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  background-color: rgb(245, 240, 240);
+  margin-right: 8px;
+  margin-left: -1px;
+  /* it pushes towards the left */
+}
+button.voice-icon {
+  background-color: rgb(245, 240, 240);
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: rgb(192, 192, 192);
+  margin-left: px;
+}
+.section-right {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  justify-content: space-between;
+  flex-shrink: 0;
+  /* this property stops the element to shrink */
+}
+.icon-right {
+  height: 25px;
+}
+.dot-icon-right {
+  height: 25px;
+}
+
+.notification-icon-right {
+  height: 25px;
+}
+.profile-icon-right {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  margin-right: 22px;
+}

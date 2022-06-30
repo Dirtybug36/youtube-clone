@@ -1,0 +1,30 @@
+.side-bar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  width: 75px;
+  box-sizing: border-box;
+  flex: 1;
+  align-items: center;
+  border-right: 1px solid rgb(234, 229, 229);
+}
+.side-bar-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 17px;
+  align-items: center;
+}
+.image-side-bar {
+  width: 25px;
+  margin-bottom: 5px;
+}
+.menu-side-bar {
+  color: black;
+  font-family: roboto, arial;
+  font-size: 10px;
+}
